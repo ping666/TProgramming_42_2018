@@ -2,7 +2,7 @@
 
 namespace CourseApp
 {
-    class City
+    public class City
     {
         public string Country { get; set; }
         private int population;
