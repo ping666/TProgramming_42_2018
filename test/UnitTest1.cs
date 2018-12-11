@@ -10,34 +10,34 @@ namespace test
         public void Test1()
         {
             City ivanovo = new City();
-            var res_country = ivanovo.Country;
-            var res_population = ivanovo.Population ;
-            var res_name = ivanovo.Name;
-            Assert.Equal("Россия", res_country);
-            Assert.Equal(316, res_population);
-            Assert.Equal("Иваново", res_name);
+            var rescountry = ivanovo.Country;
+            var respopulation = ivanovo.Population ;
+            var resname = ivanovo.Name;
+            Assert.Equal("Россия", rescountry);
+            Assert.Equal(316, respopulation);
+            Assert.Equal("Иваново", resname);
         }
         [Fact]
         public void Test2()
         {
             City moscow = new City("Москва","Россия");
-            var res_country = moscow.Country;
-            var res_population = moscow.Population;
-            var res_name = moscow.Name;
-            Assert.Equal("Россия", res_country);
-            Assert.Equal(11000, res_population);
-            Assert.Equal("Москва", res_name);
+            var rescountry = moscow.Country;
+            var respopulation = moscow.Population;
+            var resname = moscow.Name;
+            Assert.Equal("Россия", rescountry);
+            Assert.Equal(11000, respopulation);
+            Assert.Equal("Москва", resname);
         }
         [Fact]
         public void Test3()
         {
             City spb = new City("Питер", "Россия", 9000);
-            var res_country = spb.Country;
-            var res_population = spb.Population;
-            var res_name = spb.Name;
-            Assert.Equal("Россия", res_country);
-            Assert.Equal(9000, res_population);
-            Assert.Equal("Питер", res_name);
+            var rescountry = spb.Country;
+            var respopulation = spb.Population;
+            var resname = spb.Name;
+            Assert.Equal("Россия", rescountry);
+            Assert.Equal(9000, respopulation);
+            Assert.Equal("Питер", resname);
         }
              [Fact]
         public void Test4()
