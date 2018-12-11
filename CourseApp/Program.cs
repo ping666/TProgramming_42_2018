@@ -4,7 +4,7 @@ namespace CourseApp
 {
    public class Program
     {
-        public static double formula(double x, double a, double b)
+        public static double formula (double x, double a, double b)
         {
             return (a + ((Math.Sin(b * x)) * (Math.Sin(b * x))) / ((Math.Cos(b * x)) * (Math.Cos(b * x)))) / (b + ((Math.Cos(a * x) * (Math.Cos(a * x)) / (Math.Sin(a * x) * (Math.Sin(a * x))))));
 

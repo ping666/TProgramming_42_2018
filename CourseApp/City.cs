@@ -26,7 +26,7 @@ namespace CourseApp
 
         public City() : this("Иваново", "Россия", 316) { }     // 1 конструктор
 
-        public City(string name, string country) : this(name, country, 11000) { }        // 2 конструктор
+        public City(string name, string country): this(name, country, 11000) { }      // 2 конструктор
 
         public City(string name, string country, int population) { Name = name; Country = country; Population = population; }     // 3 конструктор
         public void GetInfo()
@@ -39,7 +39,7 @@ namespace CourseApp
         }
         public void Ueh()
         {
-            Console.WriteLine($"Из-за ужасной ядерной катастрофы всё население Иванова вымерло");
+            Console.WriteLine($"Из-за ужасной ядерной катастрофы всё население города вымерло");
         }
 
     }
