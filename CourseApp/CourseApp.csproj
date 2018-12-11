@@ -5,4 +5,17 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+   <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>../stylecop/stylecop.ruleset</CodeAnalysisRuleSet> 
+    <GenerateFullPaths>true</GenerateFullPaths>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="../stylecop/stylecop.json" />
+  </ItemGroup>
+
 </Project>
