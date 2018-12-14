@@ -42,13 +42,13 @@ namespace test
              [Fact]
         public void Test4()
         {
-            var res = Program.formula(0.1, 0.5, 0.15);
+            var res = Program.Formula(0.1, 0.5, 0.15);
             Assert.Equal(0.001, res, 3);
         }
         [Fact]
         public void Test5()
         {
-            var res = Program.formula(0.0, 0.0, 0.1);
+            var res = Program.Formula(0.0, 0.0, 0.1);
             Assert.Equal(0.0, res, 3);
         }
     }
