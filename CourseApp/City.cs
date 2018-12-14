@@ -50,6 +50,5 @@ namespace CourseApp
         {
             return $"Всё население {Name} вымерло";
         }
-
     }
 }
