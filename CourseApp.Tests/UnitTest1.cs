@@ -1,11 +1,13 @@
-using System;
-using Xunit;
-using CourseApp;
-
-namespace test
+namespace Test
 {
+    using System;
+    using CourseApp;
+    using Xunit;
+
     public class UnitTest1
     {
+        public object Assert { get; private set; }
+
         [Fact]
         public void Test1()
         {
@@ -17,6 +19,7 @@ namespace test
             Assert.Equal(316, respopulation);
             Assert.Equal("Иваново", resname);
         }
+
         [Fact]
         public void Test2()
         {
@@ -28,6 +31,7 @@ namespace test
             Assert.Equal(11000, respopulation);
             Assert.Equal("Москва", resname);
         }
+
         [Fact]
         public void Test3()
         {
@@ -39,12 +43,14 @@ namespace test
             Assert.Equal(9000, respopulation);
             Assert.Equal("Питер", resname);
         }
+
              [Fact]
         public void Test4()
         {
             var res = Program.Formula(0.1, 0.5, 0.15);
             Assert.Equal(0.001, res, 3);
         }
+
         [Fact]
         public void Test5()
         {

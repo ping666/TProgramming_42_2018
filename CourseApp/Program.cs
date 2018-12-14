@@ -21,6 +21,7 @@ namespace CourseApp
             {
                 Console.WriteLine($" x={x} y={Math.Round(Formula(x, a, b), 3)}");
             }
+
             Console.WriteLine();
             Console.WriteLine("под B");
             double[] z = new double[] { 0.2, 0.3, 0.44, 0.6, 0.56 };
@@ -43,7 +44,7 @@ namespace CourseApp
 
             moscow.GetInfo();
             peter.GetInfo();
-            ivanovo.s(100);
+            ivanovo.Addpopulation(100);
             ivanovo.GetInfo();
 
             Console.WriteLine(ivanovo.Dead());
