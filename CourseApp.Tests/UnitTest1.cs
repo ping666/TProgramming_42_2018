@@ -1,47 +1,45 @@
+using System;
+using CourseApp;
+using Xunit;
+
 namespace Test
 {
-    using System;
-    using CourseApp;
-    using Xunit;
-
     public class UnitTest1
     {
-        public object Assert { get; private set; }
-
         [Fact]
         public void Test1()
         {
             City ivanovo = new City();
             var rescountry = ivanovo.Country;
-            var respopulation = ivanovo.Population ;
+            var respopulation = ivanovo.Population;
             var resname = ivanovo.Name;
-            Assert.Equal("Россия", rescountry);
+            Assert.Equal("пїЅпїЅпїЅпїЅпїЅпїЅ", rescountry);
             Assert.Equal(316, respopulation);
-            Assert.Equal("Иваново", resname);
+            Assert.Equal("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ", resname);
         }
 
         [Fact]
         public void Test2()
         {
-            City moscow = new City("Москва","Россия");
+            City moscow = new City("пїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅ");
             var rescountry = moscow.Country;
             var respopulation = moscow.Population;
             var resname = moscow.Name;
-            Assert.Equal("Россия", rescountry);
+            Assert.Equal("пїЅпїЅпїЅпїЅпїЅпїЅ", rescountry);
             Assert.Equal(11000, respopulation);
-            Assert.Equal("Москва", resname);
+            Assert.Equal("пїЅпїЅпїЅпїЅпїЅпїЅ", resname);
         }
 
         [Fact]
         public void Test3()
         {
-            City spb = new City("Питер", "Россия", 9000);
+            City spb = new City("пїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅ", 9000);
             var rescountry = spb.Country;
             var respopulation = spb.Population;
             var resname = spb.Name;
-            Assert.Equal("Россия", rescountry);
+            Assert.Equal("пїЅпїЅпїЅпїЅпїЅпїЅ", rescountry);
             Assert.Equal(9000, respopulation);
-            Assert.Equal("Питер", resname);
+            Assert.Equal("пїЅпїЅпїЅпїЅпїЅ", resname);
         }
 
              [Fact]
