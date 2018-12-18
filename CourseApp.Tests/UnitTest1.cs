@@ -13,33 +13,33 @@ namespace Test
             var rescountry = ivanovo.Country;
             var respopulation = ivanovo.Population;
             var resname = ivanovo.Name;
-            Assert.Equal("������", rescountry);
+            Assert.Equal("Россия", rescountry);
             Assert.Equal(316, respopulation);
-            Assert.Equal("�������", resname);
+            Assert.Equal("Иваново", resname);
         }
 
         [Fact]
         public void Test2()
         {
-            City moscow = new City("������", "������");
+            City moscow = new City("Москва", "Россия");
             var rescountry = moscow.Country;
             var respopulation = moscow.Population;
             var resname = moscow.Name;
-            Assert.Equal("������", rescountry);
+            Assert.Equal("Россия", rescountry);
             Assert.Equal(11000, respopulation);
-            Assert.Equal("������", resname);
+            Assert.Equal("Москва", resname);
         }
 
         [Fact]
         public void Test3()
         {
-            City spb = new City("�����", "������", 9000);
+            City spb = new City("Питер", "Россия", 9000);
             var rescountry = spb.Country;
             var respopulation = spb.Population;
             var resname = spb.Name;
-            Assert.Equal("������", rescountry);
+            Assert.Equal("Россия", rescountry);
             Assert.Equal(9000, respopulation);
-            Assert.Equal("�����", resname);
+            Assert.Equal("Питер", resname);
         }
 
              [Fact]
