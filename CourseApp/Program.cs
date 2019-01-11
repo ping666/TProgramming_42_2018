@@ -1,4 +1,5 @@
 ﻿using System;
+using static CourseApp.Metropolis;
 
 namespace CourseApp
 {
@@ -44,7 +45,7 @@ namespace CourseApp
 
             moscow.GetInfo();
             peter.GetInfo();
-            ivanovo.Addpopulation(100);
+            ivanovo.AddPopulation(100);
             ivanovo.GetInfo();
 
             Console.WriteLine(ivanovo.Dead());
