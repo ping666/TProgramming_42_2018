@@ -8,6 +8,12 @@ namespace CourseApp
 
         public Metropolis()
         {
+            Name = "Иваново";
+            population = 316;
+        }
+
+        public string Name { get; set; }
+        {
         public class City
         {
             private int population;
